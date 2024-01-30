@@ -3,6 +3,8 @@
 </template>
 
 <script>
+import "moment/locale/kk";
+import "moment/locale/ru";
 import { Cookies } from "quasar";
 import moment from "moment";
 
@@ -19,9 +21,9 @@ export default {
       }
       moment.locale(this.$i18n.locale);
     },
-    mounted() {
-      this.checkLang();
-    },
+  },
+  mounted() {
+    this.checkLang();
   },
 };
 </script>
