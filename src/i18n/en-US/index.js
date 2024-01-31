@@ -5,4 +5,16 @@ export default {
   signIn: "Sign in",
   rent: "Rent",
   sale: "Sale",
+  searchFilter: {
+    buy: "Buy",
+    rent: "Rent",
+    roomType: "Room type",
+    numOfRooms: "Number of rooms",
+    priceFrom: "Price from",
+    priceTo: "Price to",
+    apartment: "Apartment",
+    house: "House",
+    show: "Show",
+    clear: "Clear",
+  },
 };

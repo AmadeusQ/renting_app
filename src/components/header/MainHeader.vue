@@ -1,5 +1,5 @@
 <template>
-  <q-header class="q-py-sm custom-header">
+  <q-header class="q-py-sm q-mb-lg custom-header">
     <q-toolbar class="q-px-md">
       <q-btn class="header-logo" padding="none" flat :to="{ path: '/' }">
         Domus
@@ -76,9 +76,6 @@ export default {
 </script>
 
 <style scoped>
-.q-btn {
-  text-transform: capitalize;
-}
 .custom-header {
   background-color: #fff;
   color: #000;

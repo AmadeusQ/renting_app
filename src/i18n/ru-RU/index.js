@@ -5,4 +5,16 @@ export default {
   signIn: "Вход",
   rent: "Аренда",
   sale: "Продажа",
+  searchFilter: {
+    buy: "Купить",
+    rent: "Арендовать",
+    roomType: "Тип помещения",
+    numOfRooms: "Количество комнат",
+    priceFrom: "Цена от",
+    priceTo: "Цена до",
+    apartment: "Квартира",
+    house: "Дом",
+    show: "Показать",
+    clear: "Очистить",
+  },
 };
