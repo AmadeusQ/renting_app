@@ -5,6 +5,7 @@ export default {
   signIn: "Вход",
   rent: "Аренда",
   sale: "Продажа",
+  meterSquare: "м²",
   searchFilter: {
     buy: "Купить",
     rent: "Арендовать",

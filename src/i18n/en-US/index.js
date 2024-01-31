@@ -5,6 +5,7 @@ export default {
   signIn: "Sign in",
   rent: "Rent",
   sale: "Sale",
+  meterSquare: "m²",
   searchFilter: {
     buy: "Buy",
     rent: "Rent",

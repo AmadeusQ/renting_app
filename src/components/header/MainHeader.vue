@@ -1,13 +1,19 @@
 <template>
   <q-header class="q-py-sm q-mb-lg custom-header">
-    <q-toolbar class="q-px-md">
+    <q-toolbar class="container q-px-none">
       <q-btn class="header-logo" padding="none" flat :to="{ path: '/' }">
         Domus
       </q-btn>
       <q-space></q-space>
       <div class="flex q-mx-md">
         <q-btn :label="$t('sale')" flat class="q-px-sm q-mr-xl" color="black" />
-        <q-btn :label="$t('rent')" flat class="q-px-sm q-ml-xl" color="black" />
+        <q-btn
+          :label="$t('rent')"
+          flat
+          class="q-px-sm q-ml-xl"
+          color="black"
+          :to="{ path: 'rent' }"
+        />
       </div>
       <q-space />
       <div class="flex items-center q-mr-md">
