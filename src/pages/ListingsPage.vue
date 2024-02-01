@@ -2,7 +2,7 @@
   <q-page class="">
     <div class="custom-search-filter container">
       <div class="q-mb-sm filter-city">Алматы</div>
-      <div class="q-mb-md">
+      <!-- <div class="q-mb-md">
         <q-btn
           style="background-color: #d9d9d9; border-radius: 10px"
           class="q-mr-md"
@@ -16,7 +16,7 @@
           :class="search.buyType === 'rent' ? 'active-btn' : ''"
           >{{ $t("searchFilter.rent") }}</q-btn
         >
-      </div>
+      </div> -->
       <div class="flex justify-between q-mb-md" style="width: 400px">
         <q-select
           class="q-pt-none"
@@ -240,7 +240,11 @@ export default {
       this.search.priceFrom = null;
       this.search.priceTo = null;
       this.search.buyType = "buy";
-      this.search.roomType = { id: 0, name: this.$t("searchFilter.apartment") };
+      this.search.roomType = {
+        id: 0,
+        name: this.$t("searchFilter.apartment"),
+        generalName: "apartment",
+      };
       this.filteredListings = this.listings;
     },
     searchListings() {
@@ -249,10 +253,10 @@ export default {
           (this.search.numOfRooms !== null
             ? item.numOfRooms === parseInt(this.search.numOfRooms, 10)
             : true) &&
-          (this.search.priceFrom !== null
+          (this.search.priceFrom !== null && !isNaN(this.search.priceFrom)
             ? item.price >= parseInt(this.search.priceFrom, 10)
             : true) &&
-          (this.search.priceTo !== null
+          (this.search.priceTo !== null && !isNaN(this.search.priceTo)
             ? item.price <= parseInt(this.search.priceTo, 10)
             : true) &&
           item.type === this.search.roomType.generalName
