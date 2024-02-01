@@ -2,7 +2,7 @@
   <q-header class="q-py-sm q-mb-lg custom-header">
     <q-toolbar class="container q-px-none">
       <q-btn class="header-logo" padding="none" flat :to="{ path: '/' }">
-        Domus
+        Flat
       </q-btn>
       <q-space></q-space>
       <div class="flex q-mx-md">
